@@ -6,6 +6,7 @@ const Calculator = ()=>{
     useEffect(()=>{
     let string = '';
     let value = 0;
+    // All buttons Works
     let btns = document .querySelectorAll('.btn')
     Array.from(btns).forEach((btn)=>{
         btn.addEventListener('click', (e)=>{
@@ -26,6 +27,7 @@ const Calculator = ()=>{
         })
         
     })
+    // Rendring Saved data from Mongoodb
     FetchCalculation()
     console.log(calculation) 
     },[])
